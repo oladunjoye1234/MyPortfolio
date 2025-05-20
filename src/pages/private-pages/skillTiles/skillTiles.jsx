@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillTiles = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
       <div className="bg-gray-800 p-4 rounded-lg flex items-center space-x-2">
         <span className="text-purple-500 text-2xl">◎</span>
         <div>

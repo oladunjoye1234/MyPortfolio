@@ -19,14 +19,14 @@ const ExperienceBadges = () => {
         <p className="text-2xl font-bold">5+</p>
         <p className="text-gray-400">Self Initiated Projects</p>
       </div>
-      <div className="bg-gray-800 p-4 rounded-lg text-center">
+      {/* <div className="bg-gray-800 p-4 rounded-lg text-center">
         <p className="text-2xl font-bold">4+</p>
         <p className="text-gray-400">Years Experience</p>
       </div>
       <div className="bg-gray-800 p-4 rounded-lg text-center">
         <p className="text-2xl font-bold">5+</p>
         <p className="text-gray-400">Years Experience</p>
-      </div>
+      </div> */}
     </div>
   );
 };
