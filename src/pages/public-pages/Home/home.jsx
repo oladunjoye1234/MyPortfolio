@@ -25,7 +25,7 @@ const home = () => {
           <div className="grid grid-cols-2 gap-3 p-4 bg-gray-800 rounded-lg shadow-md mt-4">
             <h2 className="text-lg font-bold mb-4 col-span-2">Social Links</h2>
             <button className="bg-[#1c1c1c] hover:bg-[#2a2a2a] py-3 rounded text-sm">
-              <a href="">
+              <a href="https://github.com/oladunjoye1234">
                GitHub →
               </a>
             </button>
@@ -35,7 +35,7 @@ const home = () => {
               </a>
             </button>
             <button className="bg-[#1c1c1c] hover:bg-[#2a2a2a] py-3 rounded text-sm">
-              <a href="">
+              <a href="https://x.com/Olamilekan0412">
                 Twitter →
               </a>
             </button>

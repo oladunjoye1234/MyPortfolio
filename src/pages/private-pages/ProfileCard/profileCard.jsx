@@ -1,10 +1,12 @@
 import React from 'react'
+import profilePhoto from '../../../assets/image/img.jpg'
+
 
 const profileCard = () => {
   return (
     <div className="bg-gray-800 p-6 rounded-lg flex flex-col items-center">
       <img
-        // src={profilePhoto}
+        src={profilePhoto}
         alt="Oladunjoye"
         className="w-40 h-40 rounded-full object-cover mb-4"
       />
