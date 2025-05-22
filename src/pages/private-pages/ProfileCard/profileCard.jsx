@@ -11,7 +11,7 @@ const profileCard = () => {
         className="w-40 h-40 rounded-full object-cover mb-4"
       />
       <h1 className="text-2xl font-bold">Hey I'm Oladunjoye</h1>
-      <p className="text-gray-400">Jr Product Designer at Ringover</p>
+      <p className="text-gray-400"></p>
       <div className="flex space-x-2 mt-2">
         <span className="text-orange-500">●</span>
         <span className="text-gray-400">Based in Nigeria</span>
