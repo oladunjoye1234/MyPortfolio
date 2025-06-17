@@ -9,7 +9,7 @@ import SocialLink from '../../private-pages/socialLinks/socialink'
 
 
 
-const home = () => {
+const Home = () => {
   return (
    <div className="bg-gray-900 text-white min-h-screen p-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -68,4 +68,4 @@ const home = () => {
   );
 };
 
-export default home
+export default Home
