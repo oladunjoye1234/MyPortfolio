@@ -53,7 +53,7 @@ const Work = () => {
 
           <div className="bg-gray-800 p-6 rounded-lg mt-6">
             <h3 className="text-xl font-bold">E-commerce Platform</h3>
-            <p className="text-gray-400 italic">March 2025</p>
+            <p className="text-gray-400 italic">August 2025</p>
             <p className="text-gray-600 dark:text-gray-400 mt-2">
               A responsive e-commerce platform built with React, TypeScript, and Tailwind CSS, showcasing product listings, cart functionality, and a modern UI. Designed for scalability and user engagement.
             </p>
