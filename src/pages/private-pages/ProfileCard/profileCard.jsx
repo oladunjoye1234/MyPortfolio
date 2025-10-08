@@ -16,6 +16,7 @@ const profileCard = () => {
         <span className="text-orange-500">●</span>
         <span className="text-gray-400">Based in Nigeria</span>
       </div>
+       
       <div className="flex space-x-4 mt-4">
         <a href="#" className="text-gray-400 hover:text-orange-500">GitLab</a>
         <a href="#" className="text-gray-400 hover:text-orange-500">Bitbucket</a>

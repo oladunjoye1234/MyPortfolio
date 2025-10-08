@@ -22,6 +22,14 @@ const Home = () => {
           <p className="text-gray-400">
             Explore my work and feel free to reach out if you have any questions or opportunities.  
           </p>
+          <h2 className="text-3xl font-bold mt-2 mb-4 text-gray-900 dark:text-white">Skills</h2>
+        <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+          <li>React,Node.js,TypeScript</li>
+          <li>Tailwind CSS ,GSAP, framer motion</li>
+          <li>API Integration (REST)</li>
+          <li>Responsive Design</li>
+          <li>Git & Version Control</li>
+        </ul>
           <div className="grid grid-cols-2 gap-3 p-4 bg-gray-800 rounded-lg shadow-md mt-4">
             <h2 className="text-lg font-bold mb-4 col-span-2">Social Links</h2>
             <button className="bg-[#1c1c1c] hover:bg-[#2a2a2a] py-3 rounded text-sm">
@@ -46,6 +54,7 @@ const Home = () => {
               </a>
             </button>
             
+            
           {/* <SocialLink /> */}
         </div>
         </div>
@@ -63,6 +72,9 @@ const Home = () => {
         <div className="col-span-2">
           <SkillTiles />
         </div>
+          <footer className="py-6 text-center text-gray-600 dark:text-gray-400">
+        <p>© 2025 Your Name. All rights reserved.</p>
+      </footer>
       </div>
     </div>
   );
