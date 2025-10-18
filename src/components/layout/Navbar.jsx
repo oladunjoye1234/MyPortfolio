@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectCallToAction  from '../../pages/private-pages/ProjectCallToAction/projectCallToAction';
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
       <div className="space-x-6">
         <a href="/" className="hover:text-gray-300 transition">Home</a>
         <a href="work" className="hover:text-gray-300 transition">Work</a>
-        <a href="/ProjectCallToAction" className="hover:text-gray-300 transition">Contact</a>
+        <a href="/" className="hover:text-gray-300 transition">Contact</a>
       </div>
     </nav>
   );
