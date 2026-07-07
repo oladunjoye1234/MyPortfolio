@@ -1,40 +1,57 @@
-import React from 'react';
-import ProjectCallToAction  from '../../pages/private-pages/ProjectCallToAction/projectCallToAction';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+
+const links = [
+  { to: '/', label: 'Home' },
+  { to: '/work', label: 'Work' },
+  { to: '/contact', label: 'Contact' },
+];
+
+const linkClasses = ({ isActive }) =>
+  `transition-colors ${isActive ? 'text-accent' : 'text-gray-300 hover:text-white'}`;
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="bg-gray-900 text-white p-4 flex justify-between items-center">
-      {/* Brand Section */}
-      <div className="flex items-center space-x-2">
-          <span className="text-xl font-bold">Oladunjoye</span>
-         <span className=" w-3 h-3 mt-1 bg-orange-400 rounded-full"></span>
-        
+    <nav className="sticky top-0 z-50 bg-gray-950/80 backdrop-blur border-b border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+        <NavLink to="/" className="flex items-center space-x-2" onClick={() => setOpen(false)}>
+          <span className="text-xl font-bold font-display">Oladunjoye</span>
+          <span className="w-2.5 h-2.5 bg-accent rounded-full" />
+        </NavLink>
+
+        <div className="hidden sm:flex items-center space-x-8 text-sm font-medium">
+          {links.map((link) => (
+            <NavLink key={link.to} to={link.to} className={linkClasses} end={link.to === '/'}>
+              {link.label}
+            </NavLink>
+          ))}
+        </div>
+
+        <button
+          type="button"
+          className="sm:hidden text-gray-300 hover:text-white"
+          onClick={() => setOpen((v) => !v)}
+          aria-label="Toggle menu"
+          aria-expanded={open}
+        >
+          {open ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
-      {/* Navigation Links */}
-      <div className="space-x-6">
-        <a href="/" className="hover:text-gray-300 transition">Home</a>
-        <a href="work" className="hover:text-gray-300 transition">Work</a>
-        <a href="/" className="hover:text-gray-300 transition">Contact</a>
-      </div>
+      {open && (
+        <div className="sm:hidden border-t border-gray-800 px-4 py-3 flex flex-col space-y-3 text-sm font-medium">
+          {links.map((link) => (
+            <NavLink key={link.to} to={link.to} className={linkClasses} end={link.to === '/'} onClick={() => setOpen(false)}>
+              {link.label}
+            </NavLink>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
 
 export default Navbar;
-// import React from 'react'
-
-// const Navbar = () => {
-//  return (
-//     <div className="flex justify-between items-center mb-6 bg-gray-800 p-4">
-//       <h1 className="text-white text-xl font-bold  "></h1>
-//       <nav className="space-x-4">
-//         <a href="#" className="text-gray-400 hover:text-white">home</a>
-//         <a href="#" className="text-gray-400 hover:text-white">work</a>
-//         <a href="#" className="text-gray-400 hover:text-white">contact</a>
-//       </nav>
-//     </div>
-//   );
-// }
-
-// export default Navbar
