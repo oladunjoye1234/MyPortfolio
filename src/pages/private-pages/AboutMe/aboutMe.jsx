@@ -1,18 +1,29 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { Sparkles } from 'lucide-react';
 
-const aboutMe = () => {
+const AboutMe = () => {
   return (
-    <div className="bg-gray-800 p-6 rounded-lg">
-      <h2 className="text-xl font-bold mb-2">What I'm About?</h2>
-      <p className="text-gray-400">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="bg-gray-900/60 border border-gray-800 p-6 rounded-2xl hover:border-accent/30 transition-colors"
+    >
+      <h2 className="text-xl font-bold mb-3 font-display flex items-center gap-2">
+        <Sparkles size={18} className="text-accent" />
+        What I'm About
+      </h2>
+      <p className="text-gray-400 leading-relaxed">
         Hello! I'm Oladunjoye, a Full Stack Web Developer based in Nigeria. I
-        enjoy creating Things That Live On The Internet, Whether
-        They be Websites, Applications, Or Anything In Between. My
-        Goal Is Always Build Products That Provide Pixel-Perfect,
-        Performant Experiences.
+        enjoy creating things that live on the internet, whether
+        they be websites, applications, or anything in between. My
+        goal is always to build products that provide pixel-perfect,
+        performant experiences.
       </p>
-    </div>
+    </motion.div>
   );
 };
 
-export default aboutMe;
+export default AboutMe;
